@@ -2,7 +2,10 @@ package com.queueinterface.circularbuffersimulation;
 
 public class CircularBuffer {
     private int[] buffer;
-    private int size, front, rear, count;
+    private int size;
+    private int front;
+    private int rear;
+    public int count;
 
     public CircularBuffer(int size) {
         this.size = size;

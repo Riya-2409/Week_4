@@ -2,7 +2,7 @@ package com.queueinterface.implementstackusingqueue;
 
 import java.util.*;
 
-class MyStack<T> {
+public class MyStack<T> {
     private Queue<T> mainQueue;
     private Queue<T> helperQueue;
 
@@ -49,6 +49,7 @@ class MyStack<T> {
     }
 
     public boolean isEmpty() {
+
         return mainQueue.isEmpty();
     }
 }

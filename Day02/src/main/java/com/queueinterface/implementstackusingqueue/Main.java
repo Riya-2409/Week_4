@@ -9,8 +9,8 @@ public class Main {
         stack.push(2);
         stack.push(3);
 
-        System.out.println("Top Element: " + stack.top()); // Should print 3
-        System.out.println("Popped: " + stack.pop()); // Should print 3
-        System.out.println("Top Element: " + stack.top()); // Should print 2
+        System.out.println("Top Element: " + stack.top());
+        System.out.println("Popped: " + stack.pop());
+        System.out.println("Top Element: " + stack.top());
     }
 }

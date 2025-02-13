@@ -2,7 +2,7 @@ package com.problemsinsurancepoilicysystem;
 
 import java.time.LocalDate;
 
-public class InsurancePolicy<T> {
+public class InsurancePolicy<T> extends com.problems.insurancepolicymanagementsystem.InsurancePolicy {
     private String policyNumber;
     private String policyholderName;
     private LocalDate expiryDate;

@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 // Generic Policy Management System
-class PolicyManagementSystem<T extends InsurancePolicy> {
+public class PolicyManagementSystem<T extends InsurancePolicy> {
     private Set<T> hashSet = new HashSet<>(); // Fast lookups
     private Set<T> linkedHashSet = new LinkedHashSet<>(); // Maintains insertion order
     private Set<T> treeSet = new TreeSet<>(); // Sorted by expiry date

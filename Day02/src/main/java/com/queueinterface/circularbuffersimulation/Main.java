@@ -7,9 +7,8 @@ public class Main {
         cb.insert(1);
         cb.insert(2);
         cb.insert(3);
-
         cb.insert(4);
-        cb.display(); // Buffer: [2, 3, 4]
+        cb.display();
 
     }
 }

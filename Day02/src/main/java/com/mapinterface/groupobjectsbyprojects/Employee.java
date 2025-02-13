@@ -2,7 +2,7 @@ package com.mapinterface.groupobjectsbyprojects;
 
 import java.util.Objects;
 
-class Employee {
+public class Employee {
     private String name;
     private String department;
 

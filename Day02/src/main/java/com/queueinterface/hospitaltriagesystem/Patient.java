@@ -1,7 +1,7 @@
 package com.queueinterface.hospitaltriagesystem;
 
 // Class representing a patient
-class Patient {
+public class Patient {
     String name;
     int severity;
 
@@ -16,6 +16,7 @@ class Patient {
     // Override toString() to display patient details
     @Override
     public String toString() {
+
         return name + " (Severity: " + severity + ")";
     }
 }
