@@ -1,4 +1,6 @@
 package com.reflection.advancedlevel.loggingproxy;
 
-public class Greeting {
+public interface Greeting {
+    String sayHello(String name);
 }
+
