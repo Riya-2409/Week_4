@@ -1,13 +1,17 @@
 package com.annotation.practiceproblem.advanced.cacheresult;
 
-public class ExpensiveComputation {
+class ExpensiveService {
     @CacheResult
-    public int computeFactorial(int n) {
-        System.out.println("Computing factorial of " + n);
-        if (n == 0 || n == 1) {
-            return 1;
+    public int computeSquare(int number) {
+        String key = "square_" + number;
+        Object cachedResult = CacheManager.getCachedResult(key);
+        if (cachedResult != null) {
+            System.out.println("Returning cached result for " + number);
+            return (int) cachedResult;
         }
-        return n * computeFactorial(n - 1);
+        System.out.println("Computing square for " + number);
+        int result = number * number;
+        CacheManager.putCachedResult(key, result);
+        return result;
     }
-
 }
